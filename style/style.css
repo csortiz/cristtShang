@@ -5,6 +5,11 @@
 
 /*estilos*/
 
+.maps {
+    border-radius: 10%;
+    transition: all 1s;
+}
+
 body {
     background-color: white;
 }
@@ -142,9 +147,8 @@ footer p {
         "rgl"
         "redes";
     gap: 10px;
-    background-image: url(../images/footer.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: rgb(255,194,204);
+    background: linear-gradient(135deg, rgba(255,194,204,1) 15%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(255,194,204,1) 85%);
     text-align: center;
     padding: 10px;
 }
@@ -254,16 +258,15 @@ header {
     .menu li a {
         font-size: 15px;
     }
+    
+    .maps:hover {
+        transform: scale(1.5);
+    }
 }
 
 @media (min-width:768px) {
     h1 {
         font-size: 40px;
-    }
-
-    header {
-        position: sticky;
-        top: 0px;
     }
 
     .imagenes {
