@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/favicon-16x16.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
     <title>Nosotros - Cristt Shang | Medicina Estética</title>
 </head>
@@ -17,30 +19,40 @@
                 <div>
                     <img class=logo src="../images/logo 2.jpg" width=100% alt="LOGO">
                 </div>
-                <nav>
-                    <ul class="menu">
-                        <li>
-                            <a href="../index.html">INICIO</a>
-                        </li>
-                        <li>
-                            <a href="./nosotros.html">NOSOTROS</a>
-                        </li>
-                        <li>
-                            <a href="./tratamientos.html">TRATAMIENTOS</a>
-                        </li>
-                        <li>
-                            <a href="./productos.html">PRODUCTOS</a>
-                        </li>
-                        <li>
-                            <a href="#footer">SUCURSALES</a>
-                        </li>
-                        <li>
-                            <a href="./contacto.html">CONTACTO</a>
-                        </li>
-                    </ul>
+                <nav class="navbar navbar-expand-lg navbar-light fondoNav">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse center" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./tratamientos.html">TRATAMIENTOS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#irAlFooter">SUCURSALES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
+
         <section class="content">
             <main>
                 <h1>NOSOTROS</h1>
@@ -70,36 +82,41 @@
                 <p class="titulos">Esteticista.</p>
             </section>
         </section>
-        <footer class="grillaFooter">
-            <section class="ber">
-                <iframe class="maps"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.7196899515793!2d-58.285393481007524!3d-34.71224941731343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32dfe0ffe2757%3A0x232a6dca717f78a!2sCastro%20Barros%20122%2C%20Bernal%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1656292475473!5m2!1ses!2sar"
-                    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <p>Castro Barros N° 122 ep1</p>
-                <p>Bernal Centro, Buenos Aires, Argentina</p>
-                <p><a href="https://wa.me/+5491132293244" target="_blank">(011) 1532293244</a></p>
-            </section>
-            <section class="rgl">
-                <iframe class="maps"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2476.494726301737!2d-69.22688927606384!3d-51.63246429438664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdb6fbe240f51e6f%3A0xf3cbaffe19756b8d!2sNeuqu%C3%A9n%20186%2C%20R%C3%ADo%20Gallegos%2C%20Santa%20Cruz!5e0!3m2!1ses!2sar!4v1656292648992!5m2!1ses!2sar"
-                    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <p>Neuquen N°186</p>
-                <p>Río Gallegos, Santa Cruz, Argentina</p>
-                <p><a href="https://wa.me/+5492966416322" target="_blank">(02966) 15416322</a></p>
-                <p>(02966) 438622</p>
-            </section>
-            <section class="redes">
-                <h3>Seguinos
-                    <a href="https://es-la.facebook.com/CENTRODEMEDICINAESTETICADRALIGORRIA/" target="_blank"><img
-                            class="icon" src="../images/icons8-facebook-nuevo.svg"></a>
-                    <a href="https://www.instagram.com/draligorria" target="_blank"><img class="icon"
-                            src="../images/icons8-instagram.svg"></a>
-                </h3>
-            </section>
+        <footer id="irAlFooter">
+            <div class="grillaFooter">
+                <section class="ber">
+                    <iframe class="maps"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.7196899515793!2d-58.285393481007524!3d-34.71224941731343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32dfe0ffe2757%3A0x232a6dca717f78a!2sCastro%20Barros%20122%2C%20Bernal%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1656292475473!5m2!1ses!2sar"
+                        width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>Castro Barros N° 122 ep1</p>
+                    <p>Bernal Centro, Buenos Aires, Argentina</p>
+                    <p><a href="https://wa.me/+5491132293244" target="_blank">(011) 1532293244</a></p>
+                </section>
+                <section class="rgl">
+                    <iframe class="maps"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2476.494726301737!2d-69.22688927606384!3d-51.63246429438664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdb6fbe240f51e6f%3A0xf3cbaffe19756b8d!2sNeuqu%C3%A9n%20186%2C%20R%C3%ADo%20Gallegos%2C%20Santa%20Cruz!5e0!3m2!1ses!2sar!4v1656292648992!5m2!1ses!2sar"
+                        width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>Neuquen N°186</p>
+                    <p>Río Gallegos, Santa Cruz, Argentina</p>
+                    <p><a href="https://wa.me/+5492966416322" target="_blank">(02966) 15416322</a></p>
+                    <p>(02966) 438622</p>
+                </section>
+                <section class="redes">
+                    <h3>Seguinos
+                        <a href="https://es-la.facebook.com/CENTRODEMEDICINAESTETICADRALIGORRIA/" target="_blank"><img
+                                class="icon" src="../images/icons8-facebook-nuevo.svg"></a>
+                        <a href="https://www.instagram.com/draligorria" target="_blank"><img class="icon"
+                                src="../images/icons8-instagram.svg"></a>
+                    </h3>
+                </section>
+            </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
