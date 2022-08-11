@@ -53,59 +53,59 @@
             </div>
         </header>
 
-        <section class="content">
+        <section>
             <section>
-                <h1>CONTACTO</h1>
+                <h1 class="text-center">CONTACTO</h1>
             </section>
             <!-- formulario de contacto -->
+            
+            <article class="container">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="nombre y apellido">
+                    <label for="floatingInput">Nombre y Apellido:</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="nombre@ejemplo.com">
+                    <label for="floatingInput">Email:</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="celular">
+                    <label for="floatingInput">Celular:</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option selected>Seleccione</option>
+                        <option value="Bernal">Bernal Centro</option>
+                        <option value="Gallegos">Río Gallegos</option>
 
-            <article class="grillaFormulario">
-                <form action="#">
-                    <div class="formulario">
-                        <label for="nombreApellido">Nombre y Apellido:
-                            <input required type="text" placeholder="Nombre y Apellido"><br>
-                        </label>
-                        <br>
-                        <label for="email">Email:
-                            <input required type="email" placeholder="1234@5678.com" name="email"><br>
-                        </label>
-                        <br>
-                        <label for="telefono">Teléfono:
-                            <input type="number" placeholder="Cod. área + Tel." name="telefono"><br>
-                        </label>
-                        <br>
-                        <p>Sucursal</p>
-                        <select name="sucursal" id="sucursal">
-                            <option value="bernalCentro">Bernal Centro</option>
-                            <option value="rioGallegos">Río Gallegos</option>
-                        </select>
-                        <div>
-                            <br>
-                            <p>Estoy interesado/a en:</p>
-                            <div>Productos
-                                <input type="radio" name="interes" value="Productos">
-                            </div>
-                            <div>Servicios
-                                <input type="radio" name="interes" value="Servicios">
-                            </div>
-                        </div>
-                        <br>
-                        <label for="consulta"> Consulta:
-                            <br>
-                            <textarea placeholder="Consulta"></textarea>
-                        </label>
-                        <div>
-                            <br>
-                            <input type="checkbox" name="acepta" value="1">
+                    </select>
+                    <label for="floatingSelect">Sucursal:</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Me interesan sus servicios</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Me interesan sus productos</label>
+                </div>
+                <br>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Consulta" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Consulta:</label>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
                             Quiero recibir novedades y promociones
-                        </div>
-                        <br>
+                        </label>
                     </div>
-                    <div class="botones">
-                        <input type="submit" value="ENVIAR" width="10px">
-                        <input type="reset" value="BORRAR">
-                    </div>
-                </form>
+                </div>
+                <br>
+                <div class="col-12 btm-center">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
             </article>
         </section>
         <footer id="irAlFooter">

@@ -162,26 +162,10 @@ footer p {
 }
 
 /*formulario flex*/
-.grillaFormulario {
-display: flex;
-flex-direction: column;
-}
-
-.formulario {
-display: flex;
-flex-direction: column;
-width: 50%;
-text-align: left;
-}
-
-.botones {
+.btm-center {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 50px;
-
-}
+    justify-content: center;
+  }
 
 /*imagenes*/
 .imagenes {
