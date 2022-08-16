@@ -1,0 +1,45 @@
+footer {
+    p {
+        font-style: normal;
+        font-weight: lighter;
+        font-family: Tahoma, sans-serif;
+        font-size: 12px;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .icon {
+        padding: 0px;
+        width: 20px;
+    }
+}
+
+/*areas*/
+.grillaFooter {
+    grid-area: footer;
+}
+
+.ber {
+    grid-area: ber;
+}
+
+.rlg {
+    grid-area: rgl;
+}
+
+.redes {
+    grid-area: redes;
+}
+
+.grillaFooter {
+    display: grid;
+    grid-template-areas:
+        "ber"
+        "rgl"
+        "redes";
+    gap: 10px;
+    background: $rosa;
+    background: linear-gradient(135deg, $rosa 15%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 70%, $rosa 85%);
+    text-align: center;
+    padding: 10px;
+}
