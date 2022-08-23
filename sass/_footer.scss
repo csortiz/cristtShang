@@ -39,7 +39,7 @@ footer {
         "redes";
     gap: 10px;
     background: $rosa;
-    background: linear-gradient(135deg, $rosa 15%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 70%, $rosa 85%);
+    background: linear-gradient(135deg, $rosa 15%, $blanco 30%, $blanco 70%, $rosa 85%);
     text-align: center;
     padding: 10px;
 }
