@@ -134,6 +134,10 @@ p {
   width: 100%;
 }
 
+.pF {
+  margin-bottom: 0rem;
+}
+
 /*formulario flex*/
 .btm-center {
   display: flex;
