@@ -42,6 +42,12 @@ h2 {
     margin-left: 60px;
 }
 
+.staff {
+    @extend .textos;
+    @include formato(25px, center, 15px);
+    margin-top: 15px;
+}
+
 p {
     @extend .textos;
     @include formato(16px, justify, 10px);
